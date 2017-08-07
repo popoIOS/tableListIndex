@@ -15,6 +15,8 @@
 		72E90EB41D3E1CCA00AEA389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72E90EB21D3E1CCA00AEA389 /* LaunchScreen.storyboard */; };
 		72E90EBF1D3E1CCA00AEA389 /* CityListWithIndexTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E90EBE1D3E1CCA00AEA389 /* CityListWithIndexTests.m */; };
 		72E90ECA1D3E1CCA00AEA389 /* CityListWithIndexUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E90EC91D3E1CCA00AEA389 /* CityListWithIndexUITests.m */; };
+		72E90ED91D3E298800AEA389 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E90ED81D3E298800AEA389 /* HeaderView.m */; };
+		72E90EDC1D3E2C3700AEA389 /* ChineseToPinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E90EDB1D3E2C3700AEA389 /* ChineseToPinyin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		72E90EC51D3E1CCA00AEA389 /* CityListWithIndexUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CityListWithIndexUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72E90EC91D3E1CCA00AEA389 /* CityListWithIndexUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityListWithIndexUITests.m; sourceTree = "<group>"; };
 		72E90ECB1D3E1CCA00AEA389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72E90ED71D3E298800AEA389 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
+		72E90ED81D3E298800AEA389 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
+		72E90EDA1D3E2C2700AEA389 /* ChineseToPinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseToPinyin.h; sourceTree = "<group>"; };
+		72E90EDB1D3E2C3700AEA389 /* ChineseToPinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseToPinyin.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +107,14 @@
 		72E90EA31D3E1CCA00AEA389 /* CityListWithIndex */ = {
 			isa = PBXGroup;
 			children = (
+				72E90EDA1D3E2C2700AEA389 /* ChineseToPinyin.h */,
+				72E90EDB1D3E2C3700AEA389 /* ChineseToPinyin.m */,
 				72E90EA71D3E1CCA00AEA389 /* AppDelegate.h */,
 				72E90EA81D3E1CCA00AEA389 /* AppDelegate.m */,
 				72E90EAA1D3E1CCA00AEA389 /* ViewController.h */,
 				72E90EAB1D3E1CCA00AEA389 /* ViewController.m */,
+				72E90ED71D3E298800AEA389 /* HeaderView.h */,
+				72E90ED81D3E298800AEA389 /* HeaderView.m */,
 				72E90EAD1D3E1CCA00AEA389 /* Main.storyboard */,
 				72E90EB01D3E1CCA00AEA389 /* Assets.xcassets */,
 				72E90EB21D3E1CCA00AEA389 /* LaunchScreen.storyboard */,
@@ -271,8 +281,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				72E90EAC1D3E1CCA00AEA389 /* ViewController.m in Sources */,
+				72E90EDC1D3E2C3700AEA389 /* ChineseToPinyin.m in Sources */,
 				72E90EA91D3E1CCA00AEA389 /* AppDelegate.m in Sources */,
 				72E90EA61D3E1CCA00AEA389 /* main.m in Sources */,
+				72E90ED91D3E298800AEA389 /* HeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +424,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CityListWithIndex/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaofei.CityListWithIndex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +436,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CityListWithIndex/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaofei.CityListWithIndex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
